@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PalindromeCheck {
     public static void main(String[] args) {
-        System.out.println(isPalindrome(434));
+        System.out.println(isPalindrome(-434));
     }
 
     private static boolean isPalindrome(int originalNumber){
@@ -12,6 +12,10 @@ public class PalindromeCheck {
         int reverseNumber = 0;
         int temp = originalNumber;
         int digit;
+
+        if(originalNumber < 0){
+            return false;
+        }
 
         while(temp != 0){
             digit = temp%10;
