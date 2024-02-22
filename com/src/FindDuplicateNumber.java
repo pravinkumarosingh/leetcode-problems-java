@@ -20,16 +20,9 @@ public class FindDuplicateNumber {
 
         for( int number : numbers){
             if(map.containsKey(number)){
-                count = map.get(number);
-                map.put(number,++count);
+                return number;
             } else {
                 map.put(number,1);
-            }
-        }
-
-        for ( int number : numbers){
-            if(map.get(number) > 1){
-                return number;
             }
         }
 
