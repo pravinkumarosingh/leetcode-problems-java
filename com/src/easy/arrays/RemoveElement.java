@@ -1,4 +1,4 @@
-package com.src.easy;
+package com.src.easy.arrays;
 
 public class RemoveElement {
     public static void main(String[] args) {
