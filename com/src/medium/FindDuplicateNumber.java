@@ -16,8 +16,6 @@ public class FindDuplicateNumber {
 
         Map<Integer, Integer> map = new HashMap<>();
 
-        int count = 0;
-
         for( int number : numbers){
             if(map.containsKey(number)){
                 return number;
